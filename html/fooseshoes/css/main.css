@@ -1,0 +1,874 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+    font-family: 'Bariol';
+    src: url('BariolRegular-Italic.woff2') format('woff2'),
+        url('BariolRegular-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Bariol';
+    src: url('Bariol-Regular.woff2') format('woff2'),
+        url('Bariol-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aller';
+    src: url('../fonts/Aller.woff2') format('woff2'),
+        url('Aller.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aller';
+    src: url('../fonts/Aller-Italic.woff2') format('woff2'),
+        url('Aller-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('../fonts/Aller-Bold.woff2') format('woff2'),
+        url('Aller-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller-Light.woff2') format('woff2'),
+        url('Aller-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller-BoldItalic.woff2') format('woff2'),
+        url('Aller-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aller Display';
+    src: url('AllerDisplay.woff2') format('woff2'),
+        url('AllerDisplay.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller-LightItalic.woff2') format('woff2'),
+        url('Aller-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: : 1;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+a {
+    background color: #232324;
+    padding: 2px;
+    border-radius : 1px;
+
+}
+a.active{
+    background-color: #232324;
+    padding: 2px;
+    border-radius : 2px;
+}
+a:link {
+    font-family: Arial;
+    color: #232324;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+a:visited{
+    font-family: Arial;
+    color: #232324;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.pricetag{
+    margin-top: 40px;
+    background-color: #57C5A0;
+    padding: 2px;
+    color: #FFF;
+    max-height: 60px;
+    max-width: 60px;
+}
+.pricetag h5{
+    color: #FFF;
+    font-family: Times New Roman;
+    font-size: 1.1rem;
+}
+.inline{
+    display: inline;
+}
+body{
+    background-color: #242424;
+}
+
+.container {
+
+}
+.width{
+    width: 960px;
+    margin: 0 auto;
+}
+.width a{
+    border: solid;
+
+    border-left: 1px;
+    border-right: 1px;
+    border-color: #EEE;
+}
+.MRight{
+    padding-right: 40px;
+}
+h1 {
+    font-family: Bariol;
+    color:#57c5a0;
+    margin-top: 0;
+    width: 960px;
+    margin: 0 auto;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.logo p{
+    color: #7e7e7e;
+            float: none;
+        border-right:none;
+}
+header {
+    background: #323232;
+
+}
+nav {
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    float: none;
+    text-align: center;
+    border-right:none;
+}
+.whitespace{
+    background-color: #FAFAF9;
+    padding: 1px;
+    height: 40px;
+    width: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    margin: 2px;
+        display: flex;
+    justify-content: center;   
+}
+.banner {
+    background-image: url('../img/background_image_shoe.png');
+    display: flex;    
+}
+.bannerright{
+
+}
+
+.lineup{
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+.bundle{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.banner h5{
+    font-size: 2.3em;
+    font-family: Bariol;
+    margin:0px;
+}
+.text3{
+    font-size: 1.3em;
+    font-family: Bariol;
+}
+.top{
+    background-color: #2E2E2E;
+    margin: 0 auto;
+}
+.top p {
+    color :#ACACAC;
+    padding :0px;
+    margin : 0px;
+}
+.top h4 {
+    color: #EEE;
+    padding :0px;
+        margin : 0px;
+}
+#small {
+    font-size: 0.8rem;
+
+}
+.sale {
+    background-color: #242424;
+    margin : 0px;
+}
+.sale p{
+    margin : 0px;
+}
+.top .width{
+    display: flex;
+    justify-content: space-between;
+}
+.distance{
+    display:flex;
+    justify-content: space-between;
+}
+.blackspace{
+    background-color: rgba(24, 24, 24, 0.85);
+    padding: 1px;
+    height: 60px;
+    width: 180px;
+    max-height: 60px;
+    max-width: 180px;
+    margin-top: 60px;
+     display: flex;
+    justify-content: center;  
+}
+.blackspace p{
+    color :#FFF;
+    font-size: 1.3em;
+    font-family: Aller;
+    margin: 14px;
+
+}
+.pict1{
+    background-image: url('../img/pic1.png');
+    display: flex;    
+    height: 180px;
+    width: 300px;
+    max-height: 180px;
+    max-width: 300px;
+        display: flex;
+    justify-content: center;  
+}
+.pict2{
+    background-image: url('../img/pic2.png');
+    display: flex;    
+    height: 180px;
+    width: 300px;
+    max-height: 180px;
+    max-width: 300px;
+        display: flex;
+    justify-content: center;  
+}
+.pict3{
+    background-image: url('../img/pic3.png');
+    display: flex;    
+    height: 180px;
+    width: 300px;
+    max-height: 180px;
+    max-width: 300px;
+        display: flex;
+    justify-content: center;  
+}
+.shoe_sale{
+    background-color: #EBE7DF;
+    margin : 0px;
+}
+.shoe_sale p {
+        color :#000;
+    font-size: 1.3em;
+    font-family: Aller; 
+}
+.whiteplane{
+    background-color: #FFF;
+    height: 40px;
+    max-height : 40px;
+    border-top: 1px solid #EBEBEB;
+    padding: 15px;
+    font-size: 1.2em;
+    color: #000000;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.whiteplane p{
+    margin: auto 0px;
+}
+.blog1{
+    width:220px;
+    height:185px;
+    background: #DFDBD4;
+    border: 7px solid #DFDBD4;
+}   
+
+.blog3{
+    width:460px;
+    height:185px;
+    background: #DFDBD4;
+    border: 7px solid #DFDBD4;
+}
+.blogspace{
+    font-family: aller;
+    padding-bottom: 30px;
+}
+.blogspace h4{
+    font-size: 16px;
+    margin:7px;
+}
+.blogspace h5{
+    font-size: 14px;
+    margin:7px;
+}
+.blogspace p{
+    font-size: 12px;
+    margin:4px;
+}
+.space-between{
+    display:flex;
+    justify-content: space-between;
+}
+
+.contact{
+    background: #242424; 
+    color: #ACACAC
+}
+.contactspace{
+    font-family: aller;
+            width: 400px;
+    max-width: 400px;
+
+}
+.contactspace h4{
+    font-size: 16px;
+    margin:4px;
+}
+.contactspace h5{
+    font-size: 12px;
+    font-weight: bold;
+    margin:7px;
+}
+.contactspace p{
+    font-size: 12px;
+    margin:4px;
+
+}
+.contactspace span{
+    color: #51B593;
+    
+}
+ 
+.contact_background {
+    background-color: #242424;
+    margin : 0px;
+    border-bottom:1px solid #1C1C1C;    
+}
+.contact_background ul{
+    background-color: #242424;
+    margin : 0px;
+    border-bottom:1px solid #1C1C1C;    
+}
+.contactspace-small{
+    font-family: aller;
+            width: 200px;
+    max-width: 200px;
+    height:200px;
+}
+.belowcontact ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #242424;
+}
+.belowcontact li{
+    display: block;
+    text-align: center;
+    background: #242424;
+}
+.belowcontact_background{
+       background-color: #242424;
+    margin : 0px;
+}
+.belowcontact {
+    color: #ACACAC
+}
+footer{
+    background: #2E2E2E; 
+    color: #ACACAC;
+    font-family: Aller;
+    font-size: 0.8rem;
+}
+
+/* =============SPRITESHEET  AUTHORS STUFF============= */
+#author1 {
+    left: 0px;
+    width: 76px;
+    height: 56px;   
+    background: url('../img/spritesheet_authors.png') 0px 0;
+}
+#author2 {
+    left: 0px;
+    width: 76px;
+    height: 56px;    
+    background: url('../img/spritesheet_authors.png') 77px 0;
+}
+#author3 {
+    left: 0px;
+    width: 76px;
+    height: 56px;  
+    background: url('../img/spritesheet_authors.png') 154px 0;
+}
+#author4 {
+    left: 0px;
+    width: 76px;
+    height: 56px;    
+    background: url('../img/spritesheet_authors.png') 231px 0;
+}
+#author5 {
+    left: 0px;
+    width: 76px;
+    height: 56px;  
+    background: url('../img/spritesheet_authors.png') 308px 0;
+}
+#author6 {
+    left: 0px;
+    width: 76px;
+    height: 56px;   
+    background: url('../img/spritesheet_authors.png') 385px 0;
+}
+/* s=============SPRITESHEET==========*/
+#socialmedia1 {
+    left: 0px;
+    width: 32px;
+    height: 32px;   
+    background: url('../img/spritesheet_shopping.png') 0px 0;
+}
+#socialmedia2 {
+    left: 0px;
+    width: 32px;
+    height: 32px;   
+    background: url('../img/spritesheet_shopping.png') 35px 0;
+}
+#socialmedia3 {
+    left: 0px;
+    width: 32px;
+    height: 32px;   
+    background: url('../img/spritesheet_shopping.png') 74px 0;
+}
+#socialmedia4 {
+    left: 0px;
+    width: 32px;
+    height: 32px;   
+    background: url('../img/spritesheet_shopping.png') 111px 0;
+}
+#socialmedia5 {
+    left: 0px;
+    width: 32px;
+    height: 32px;   
+    background: url('../img/spritesheet_shopping.png') 148px 0;
+}
+/* authors=============SPRITESHEET==========*/
+.sheet_specials{
+    height: 180px;
+    display: block;
+}
+#pic1 {
+    left: 0px;
+    width: 300px;
+    height: 180px;   
+    background: url('../img/spritesheet_specials.png') 0px 0;
+}
+#pic2 {
+    left: 0px;
+    width: 300px;
+    height: 180px;   
+    background: url('../img/spritesheet_specials.png') 301px 0;
+}
+#pic3 {
+    left: 0px;
+    width: 300px;
+    height: 180px;   
+    background: url('../img/spritesheet_specials.png') 602px 0;
+}
+.sheet_shoes{
+
+    display: block;
+}
+#shoe1 {
+    left: 0px;
+    width: 300px;
+    height: 220px;   
+    background: url('../img/spritesheet_shoes.png') 0px 0;
+        margin: 0px;
+}
+#shoe2 {
+    left: 0px;
+    width: 300px;
+    height: 220px;   
+    background: url('../img/spritesheet_shoes.png') 301px 0;
+        margin: 0px;
+}
+#shoe3 {
+    left: 0px;
+    width: 300px;
+    height: 220px;   
+    background: url('../img/spritesheet_shoes.png') 602px 0;
+        margin: 0px;
+}
+#shoe4 {
+    left: 0px;
+    width: 300px;
+    height: 220px;   
+    background: url('../img/spritesheet_shoes.png') 903px 0;
+        margin: 0px;
+}
+#shoe5 {
+    left: 0px;
+    width: 300px;
+    height: 220px;   
+    background: url('../img/spritesheet_shoes.png') 1204px 0;
+        margin: 0px;
+}
+#shoe6 {
+    left: 0px;
+    width: 300px;
+    height: 220px;   
+    background: url('../img/spritesheet_shoes.png') 1505px 0;
+        margin: 0px;
+}
+.sheet{
+    height: 16px;
+    display: block;
+}
+#lens {
+    left: 0px;
+    width: 16px;
+    height: 16px;   
+    background: url('../img/spritesheet_icons.png') 0px 0;
+}
+#cart {
+    left: 0px;
+    width: 16px;
+    height: 16px;   
+    background: url('../img/spritesheet_icons.png') -17px 0;
+}
+#star {
+    left: 0px;
+    width: 16px;
+    height: 16px;   
+    background: url('../img/spritesheet_icons.png') -34px 0;
+}
+#eye {
+    left: 0px;
+    width: 16px;
+    height: 16px;   
+    background: url('../img/spritesheet_icons.png') -51px 0;
+}
+#popup {
+    left: 0px;
+    width: 16px;
+    height: 16px;   
+    background: url('../img/spritesheet_icons.png') -68px 0;
+}
+#cart_green {
+    left: 0px;
+    width: 16px;
+    height: 16px;   
+    background: url('../img/spritesheet_icons.png') -85px 0;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
