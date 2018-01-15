@@ -167,49 +167,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding-right: : 1;
-    overflow: hidden;
-    background-color: #FFF;
-}
 
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-a {
-    background color: #232324;
-    padding: 2px;
-    border-radius : 1px;
-
-}
-a.active{
-    background-color: #232324;
-    padding: 2px;
-    border-radius : 2px;
-}
-a:link {
-    font-family: Arial;
-    color: #232324;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-a:visited{
-    font-family: Arial;
-    color: #232324;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
 .inline{
     display: inline;
 }
@@ -224,13 +182,7 @@ body{
     width: 960px;
     margin: 0 auto;
 }
-.width a{
-    border: solid;
 
-    border-left: 1px;
-    border-right: 1px;
-    border-color: #EEE;
-}
 .MRight{
     padding-right: 40px;
 }
@@ -266,15 +218,24 @@ h1 {
     display: flex;
     justify-content: center;
 }
-.logo p{
+.logo h5{
     color: #7e7e7e;
             float: none;
         border-right:none;
+        padding-right: 220px;
+        font-family: Aller;
+
 }
 header {
     background: #323232;
 
 }
+
+
+/* ==========================================================================
+   NAVE / MENU
+   ========================================================================== */
+
 nav {
     background: #FFF;
     display: flex;
@@ -283,18 +244,56 @@ nav {
     text-align: center;
     border-right:none;
 }
-.whitespace{
-    background-color: #FAFAF9;
-    padding: 1px;
-    height: 40px;
-    width: 40px;
-    max-height: 40px;
-    max-width: 40px;
-    margin: 2px;
-        display: flex;
-    justify-content: center;   
+.menu ul li{
+    float: left;
+    border-left: 1px solid #EEEEEE;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 1;
+    overflow: hidden;
+    background-color: #FFF;
 }
 
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+a {
+    background color: #232324;
+    padding: 2px;
+
+
+}
+a.active{
+    background-color: #232324;
+    padding: 2px;
+}
+a:link {
+    font-family: Arial;
+    color: #232324;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+a:visited{
+    font-family: Arial;
+    color: #232324;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
 /* ==========================================================================
    Banner
    ========================================================================== */
@@ -323,7 +322,25 @@ nav {
 .text3{
     font-size: 1.3em;
     font-family: Bariol;
+    padding-right: 220px;
 }
+
+.whitespace{
+    background-color: #FAFAF9;
+    padding: 1px;
+    height: 40px;
+    width: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    margin: 2px;
+        display: flex;
+    justify-content: center;   
+}
+/* ==========================================================================
+   SALES PITCHES
+   ========================================================================== */
+
+
 .top{
     background-color: #2E2E2E;
     margin: 0 auto;
@@ -415,7 +432,33 @@ nav {
     bottom: -259px;
     margin: -32px;
 }
+.saletag{
+margin-top: 40px;
+    background-color: #242424;
+    padding: 2px;
+    color: #FFF;
+    max-height: 62px;
+    max-width: 60px;
+    position: relative;
+    left: 277px;
+    bottom: -17px;
+    margin: -49px;
+}
+.soldouttag{
+margin-top: 40px;
+    background-color: #F27E4B;
+    padding: 2px;
+    color: #FFF;
+    max-height: 62px;
+    max-width: 60px;
+    position: relative;
+    left: 260px;
+    bottom: 187px;
+    margin: -33px
+}
+.container .saletag{
 
+}
 .shoe_sale{
     background-color: #EBE7DF;
     margin : 0px;
@@ -440,6 +483,15 @@ nav {
     margin: auto 0px;
         position: relative;
     left: 28px;
+}
+.whiteplane .lineup{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0px;
+    width: 160px;
+        position: relative;
+    left: 98px;
+    bottom: -12px;
 }
 .whiteplane .pricetag p{
         margin-top: 40px;
