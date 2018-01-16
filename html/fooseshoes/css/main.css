@@ -626,68 +626,68 @@ footer{
 }
 
 /* =============SPRITESHEET  AUTHORS STUFF============= */
-#author1 {
+.author1 {
     left: 0px;
     width: 76px;
     height: 56px;   
     background: url('../img/spritesheet_authors.png') 0px 0;
 }
-#author2 {
+.author2 {
     left: 0px;
     width: 76px;
     height: 56px;    
     background: url('../img/spritesheet_authors.png') 77px 0;
 }
-#author3 {
+.author3 {
     left: 0px;
     width: 76px;
     height: 56px;  
     background: url('../img/spritesheet_authors.png') 154px 0;
 }
-#author4 {
+.author4 {
     left: 0px;
     width: 76px;
     height: 56px;    
     background: url('../img/spritesheet_authors.png') 231px 0;
 }
-#author5 {
+.author5 {
     left: 0px;
     width: 76px;
     height: 56px;  
     background: url('../img/spritesheet_authors.png') 308px 0;
 }
-#author6 {
+.author6 {
     left: 0px;
     width: 76px;
     height: 56px;   
     background: url('../img/spritesheet_authors.png') 385px 0;
 }
 /* s=============SPRITESHEET==========*/
-#socialmedia1 {
+.socialmedia1 {
     left: 0px;
     width: 32px;
     height: 32px;   
     background: url('../img/spritesheet_shopping.png') 0px 0;
 }
-#socialmedia2 {
+.socialmedia2 {
     left: 0px;
     width: 32px;
     height: 32px;   
     background: url('../img/spritesheet_shopping.png') 35px 0;
 }
-#socialmedia3 {
+.socialmedia3 {
     left: 0px;
     width: 32px;
     height: 32px;   
     background: url('../img/spritesheet_shopping.png') 74px 0;
 }
-#socialmedia4 {
+.socialmedia4 {
     left: 0px;
     width: 32px;
     height: 32px;   
     background: url('../img/spritesheet_shopping.png') 111px 0;
 }
-#socialmedia5 {
+.socialmedia5 {
     left: 0px;
     width: 32px;
     height: 32px;   
@@ -698,19 +698,19 @@ footer{
     height: 180px;
     display: block;
 }
-#pic1 {
+.pic1 {
     left: 0px;
     width: 300px;
     height: 180px;   
     background: url('../img/spritesheet_specials.png') 0px 0;
 }
-#pic2 {
+.pic2 {
     left: 0px;
     width: 300px;
     height: 180px;   
     background: url('../img/spritesheet_specials.png') 301px 0;
 }
-#pic3 {
+.pic3 {
     left: 0px;
     width: 300px;
     height: 180px;   
@@ -720,7 +720,7 @@ footer{
 
     display: block;
 }
-#shoe1 {
+.shoe1 {
     left: 0px;
     width: 300px;
     height: 220px;   
@@ -728,35 +728,35 @@ footer{
         margin: 0px;
 }
 
-#shoe2 {
+.shoe2 {
     left: 0px;
     width: 300px;
     height: 220px;   
     background: url('../img/spritesheet_shoes.png') 301px 0;
         margin: 0px;
 }
-#shoe3 {
+.shoe3 {
     left: 0px;
     width: 300px;
     height: 220px;   
     background: url('../img/spritesheet_shoes.png') 602px 0;
         margin: 0px;
 }
-#shoe4 {
+.shoe4 {
     left: 0px;
     width: 300px;
     height: 220px;   
     background: url('../img/spritesheet_shoes.png') 903px 0;
         margin: 0px;
 }
-#shoe5 {
+.shoe5 {
     left: 0px;
     width: 300px;
     height: 220px;   
     background: url('../img/spritesheet_shoes.png') 1204px 0;
         margin: 0px;
 }
-#shoe6 {
+.shoe6 {
     left: 0px;
     width: 300px;
     height: 220px;   
@@ -767,37 +767,37 @@ footer{
     height: 16px;
     display: block;
 }
-#lens {
+.lens {
     left: 0px;
     width: 16px;
     height: 16px;   
     background: url('../img/spritesheet_icons.png') 0px 0;
 }
-#cart {
+.cart {
     left: 0px;
     width: 16px;
     height: 16px;   
     background: url('../img/spritesheet_icons.png') -17px 0;
 }
-#star {
+.star {
     left: 0px;
     width: 16px;
     height: 16px;   
     background: url('../img/spritesheet_icons.png') -34px 0;
 }
-#eye {
+.eye {
     left: 0px;
     width: 16px;
     height: 16px;   
     background: url('../img/spritesheet_icons.png') -51px 0;
 }
-#popup {
+.popup {
     left: 0px;
     width: 16px;
     height: 16px;   
     background: url('../img/spritesheet_icons.png') -68px 0;
 }
-#cart_green {
+.cart_green {
     left: 0px;
     width: 16px;
     height: 16px;   
