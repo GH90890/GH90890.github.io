@@ -399,10 +399,28 @@ footer .copyright{
     }
         .nav-bar {
         height:245px;
-        max-height: 245px;
+        max-height: 200px;
+        width:100%;
     }
+        .logo nav{
+        position: absolute;
+        float: right;
+        display: inline;
+        bottom :360px;
+    }
+        .items{
+              display: flex;
+        flex-direction: column;
+    }
+    .column {
+    border:4px;
+}
     div.text{
         font-size: 0.8em;
+    }
+    .darkbackground{
+        width:116px;
+        height:41px;
     }
 
 }
@@ -443,6 +461,7 @@ footer .copyright{
     -webkit-transform: scale(0.67);
        -moz-transform: scale(0.67);
             transform: scale(0.67);
+            overflow-x: hidden;
  }
 }
 
